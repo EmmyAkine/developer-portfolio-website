@@ -1,3 +1,4 @@
+import Link from "next/link"
 import { ArrowRight, Mail, Gamepad2, Server } from "lucide-react"
 import { GithubIcon, LinkedinIcon } from "@/components/brand-icons"
 
@@ -45,20 +46,20 @@ export function Hero() {
           </p>
 
           <div className="flex flex-wrap items-center gap-3 pt-2">
-            <a
-              href="#projects"
+            <Link
+              href="/projects"
               className="inline-flex items-center gap-2 rounded-md bg-primary px-5 py-2.5 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
             >
               View Projects
               <ArrowRight className="size-4" />
-            </a>
-            <a
-              href="#contact"
+            </Link>
+            <Link
+              href="/contact"
               className="inline-flex items-center gap-2 rounded-md border border-border bg-secondary/40 px-5 py-2.5 text-sm font-medium text-foreground transition-colors hover:bg-secondary"
             >
               <Mail className="size-4" />
               Get in Touch
-            </a>
+            </Link>
           </div>
 
           <div className="flex items-center gap-3 pt-2">
